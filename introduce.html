@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./static/css/reset.css">
+  <link rel="stylesheet" href="./static/css/global.css">
+  <link rel="stylesheet" href="./static/css/header.css">
+  <link rel="stylesheet" href="./static/css/footer.css">
+  <link rel="stylesheet" href="./static/css/introduce.css">
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/header.js"></script>
+  <script src="./static/js/footer.js"></script>
+  <script src="./static/js/introduce.js"></script>
+</head>
+
+<body>
+  <!-- 页面头部 -->
+  <header class="header">
+    <!-- 用于协助响应式设计的容器 -->
+    <div class="container">
+      <!-- 类名为gap的元素节点仅用于协助响应式设计，无实际内容 -->
+      <div class="gap-left"></div>
+      <!-- 网站logo放置区 -->
+      <div class="logo">
+        <img src="./static/imgs/logo.png" alt="logo">
+      </div>
+      <!-- 类名为gap的元素节点仅用于协助响应式设计，无实际内容 -->
+      <div class="gap-middle"></div>
+      <!-- 顶部导航栏 -->
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li class="item"><a href="javascript:;" data-home>首页</a></li>
+          <li class="item"><a href="javascript:;" data-introduce>公司介绍</a></li>
+          <li class="item"><a href="javascript:;" data-project>项目介绍</a></li>
+          <li class="item"><a href="javascript:;" data-information>公司资讯</a></li>
+          <li class="item"><a href="javascript:;" data-contact>联系我们</a></li>
+          <li class="item"><a href="javascript:;" data-participate>招商平台</a></li>
+        </ul>
+      </nav>
+      <!-- 语言栏 -->
+      <div class="langue-bar">
+        <a href="javascript:;" class="chinese active">中</a>/<a href="javascript:;" class="english">英</a>
+      </div>
+      <!-- 缩放到768px的断点后显示的菜单栏 -->
+      <div class="menu">
+        <button class="menu-btn"></button>
+        <!-- 下拉区域 -->
+        <div class="drop-down-area">
+          <!-- 语言栏 -->
+          <div class="langue-bar">
+            <a href="javascript:;" class="chinese active">中</a>/<a href="javascript:;" class="english">英</a>
+          </div>
+          <!-- 导航列表 -->
+          <ul class="nav-list">
+            <li class="item"><a href="javascript:;" data-home>首页</a></li>
+            <li class="item"><a href="javascript:;" data-introduce>公司介绍</a></li>
+            <li class="item"><a href="javascript:;" data-project>项目介绍</a></li>
+            <li class="item"><a href="javascript:;" data-information>公司资讯</a></li>
+            <li class="item"><a href="javascript:;" data-contact>联系我们</a></li>
+            <li class="item"><a href="javascript:;" data-participate>招商平台</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 页面主体部分 -->
+  <main class="introduce">
+    <div class="banner">
+      <img src="./static/imgs/introduce/banner.png" alt="banner">
+    </div>
+    <!-- 公司简介 -->
+    <section class="company-profile">
+      <!-- 章节标题 -->
+      <h2 class="section-title">
+        <p class="main-title">
+          <span>COMPANY PROFILE</span>
+        </p>
+        <small class="sub-title">公司简介</small>
+      </h2>
+      <!-- 简介 -->
+      <section class="profile">
+        <p>
+          MRK集团旗下红粟新生态产业科学发展（广东）有限公司创立于2019年，是一家依托互联网+，大数据，云储存，云计算，云仓系统为技术路径和自主研发为核心的高新技术企业。致力于打造产业互联，产销互联，消费互联的创新循环经济新商业事业发展平台。目标是响应国家号召和政策支持，推进全民共同富裕，共谋发展，贯彻落实《“二十大”全国代表大会》以及《“十四五”循环经济发展规划》以来发展循环经济的国家战略，促进社会经济实体经济的繁荣和可持续发展。
+        </p>
+        <hr />
+        <section>
+          <h3>公司简介</h3>
+          <p>
+            红粟事业平台通过六年的开发和深入市场调研，结合科学发展持续发展的理念，创新性的推出红粟新生态产业科学发展双循环连锁平台，红粟新生态产业双循环科学发展平台B2B+B2C双赛道、一站式、双循环，新模式，线上线下结合，旨在服务亿万家庭，赋能千万企业，赋能乡村振兴千行百业产业创新发展，构建红粟新生态新商业新经济智慧生态圈。
+            红粟云计算、大数据、数字化、智能化赋能社员百货连锁超市社区A\B\C三店以及配套全国物流网的系统落地服务，打通乡村振兴最后一公里，服务亿万家庭，赋能千万企业，帮助全国各大中小企业盘活闲置资产，提供广阔的业务渠道，促进商品流通，拉动内需增长需求，以创新带动创业，以创业带动就业，同时以更加精准和超值的服务来赋能亿万家庭消费需求，推动乡村振兴，加速城镇一体化发展，推动乡村振兴全国各大工业农业产业优化创新，科学发展，持续发展，促进社会经济生态繁荣发展和稳定，实现全民共同富裕，向世界500强企业奋进
+          </p>
+        </section>
+      </section>
+      <!-- 核心价值观 此处使用article标签而不用section标签是语义化问题，article可作为一篇独立文章取出，而section则与本页的内容关联更密切，属于本页的不可分割的一部分 -->
+      <article class="core-value">
+        <!-- TODO:待插入背景图 -->
+        <!-- <img src="" alt="background" class="bg"> -->
+        <h3>核心价值观</h3>
+        <!-- 核心价值观关键词定义列表 -->
+        <dl class="keywords-dfn-list">
+          <dt class="keywords"><span>诚信</span><span>责任</span><span>创新</span><span>利他</span></dt>
+          <dd class="integrity">
+            诚信：诚信是企业的生命线，是社会进步和文化自信以及文明发展的具体体现。红粟以传承百年MRK品牌匠心精神为己任，以严格的品控和价格评估体系做为公司践行诚实守信，重塑产业科学发展，重商兴商义商，弘扬主旋律，倡导诚信共赢的社会主义价值观。
+          </dd>
+          <dd class="duty">
+            责任：科技兴企，产业报国，以政策为导向，紧扣时代主题，践行科学发展观，以人为本，汇聚人才，资金，产业优势，精准助农扶农，聚焦三农问题，贯彻落实乡村振兴战略，承担起企业应有的使命，责任和担当，受之于社会，回馈于社会。
+          </dd>
+          <dd class="innovate">
+            创新：创新驱动发展，创新即为创造，打破旧体制，展现新的发展观和大局观，瞄准改革前沿，激发市场活力，双循环新生态商业平台，服务千万企业，赋能亿万家庭，提升乡村振兴，助力三农产业发展提质增效，三农产品畅通销售渠道，解决最后一公里问题，最终达成产业互联，产销互联，消费互联的综合生态示范效应。
+          </dd>
+          <dd class="altruism">
+            利他：成人达己，通过红粟事业平台的快速发展，高效强大的云系统做为技术支撑，能够调配和统筹供应链渠道各类型企业的产能和优质产品，依托双循环的线上线下社员百货连锁云店以及社区地店的互动营销生态模式，打造一站式销售终端，助力三农发展，扶持订单农业，为创业就业人群提供多维度价值需求，扩充地方政府税源，助推企业良性发展，亿万家庭消费增值，创业带动就业，振兴乡村经济发展，实现做有一家对社会有价值，有贡献的事业平台的宏愿。
+          </dd>
+        </dl>
+      </article>
+      <!-- 目标与愿景 -->
+      <section class="goals-and-visions">
+        <!-- vignette意为装饰图案，小插图等，仅用于装饰，无实际含义，本处用于作为容器承载图片，不直接用img标签直接插入图片是是考虑到布局结构的平整性 -->
+        <div class="vignette">
+          <img src="./static/imgs/introduce/我们的目标配图‘.png" alt="vignette">
+        </div>
+        <section class="goals">
+          <h3>我们的目标</h3>
+          <p>服务亿万家庭 赋能千万企业
+            和衷共济
+            和合共生
+            一带一路
+            共同富裕
+            我们携手所有的事业共同体团结向前，向世界500强企业目标奋进！</p>
+        </section>
+        <section class="visions">
+          <h3>我们的愿景</h3>
+          <p>将红粟新生态产业双循环科学发展事业打造成为全球最具影响力、最具竞争力、最受欢迎的事业平台</p>
+        </section>
+        <div class="vignette">
+          <img src="./static/imgs/introduce/我们的愿景配图.png" alt="vignette">
+        </div>
+      </section>
+    </section>
+    <!-- 企业架构 -->
+    <section class="enterprise-architecture">
+      <!-- 章节标题 -->
+      <h2 class="section-title">
+        <p class="main-title">
+          <span>ENTERPRISE ARCHITECTURE</span>
+        </p>
+        <small class="sub-title">企业架构</small>
+      </h2>
+      <!-- illustration 意为插图、图解等，此处用于作为容器承载相应的img，不直接用img标签插入是出于结构平整性以及布局灵活性的考虑。 -->
+      <div class="illustration">
+        <img src="./static/imgs/introduce/企业架构.png" alt="illustration">
+      </div>
+    </section>
+  </main>
+  <!-- 页面尾部 -->
+  <footer class="footer">
+    <!-- .container仅用于辅助进行响应式布局 -->
+    <div class="container">
+      <!-- 公司 logo等基本信息区 -->
+      <div class="company-info-col">
+        <!-- logo放置区 -->
+        <div class="logo">
+          <img src="./static/imgs/logo.png" alt="logo">
+        </div>
+        <!-- 联系信息 -->
+        <address>
+          <p class="phone"><span>电话:</span>+15858585858</p>
+          <p class="email"><span>邮箱:</span>xxxxxxxx@QQ.com</p>
+        </address>
+        <!-- 版权 -->
+        <p class="copyright">Copyright©2016-20122 红粟云 版权所有</p>
+      </div>
+      <!-- 仅用于弹性布局及响应式用，无实际意义 -->
+      <div class="flex-gap"></div>
+      <!-- 底部导航区 -->
+      <nav class="nav-col">
+        <ul class="nav-list col-1">
+          <li class="item"><a href="javascript:;">关于我们</a></li>
+          <li class="item"><a href="javascript:;">品牌故事</a></li>
+          <li class="item"><a href="javascript:;">品牌荣誉</a></li>
+          <li class="item"><a href="javascript:;">人才招聘</a></li>
+          <li class="item"><a href="javascript:;">联系我们</a></li>
+        </ul>
+        <ul class="nav-list col-2">
+          <li class="item"><a href="javscript:;">产品</a></li>
+          <li class="item"><a href="javscript:;">定制中心</a></li>
+          <li class="item"><a href="javscript:;">专业定制高端</a></li>
+        </ul>
+        <ul class="nav-list col-3">
+          <li class="item"><a href="javascript:;">支持</a></li>
+          <li class="item"><a href="javascript:;">条款和条件</a></li>
+          <li class="item"><a href="javascript:;">隐私</a></li>
+          <li class="item"><a href="javascript:;">帮助</a></li>
+          <li class="item"><a href="javascript:;">链接</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

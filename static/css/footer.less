@@ -1,0 +1,253 @@
+.footer {
+  display: flow-root;
+  background-color: #f0f3f7;
+
+  .container {
+    display: flex;
+    margin-top: 71px;
+    margin-bottom: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1065px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    color: #666666;
+    font-weight: 400;
+
+    .company-info-col {
+      flex: none;
+
+      .logo {
+        margin-bottom: 54px;
+        width: 122px;
+      }
+
+      address {
+        margin-bottom: 47px;
+        line-height: 1.5;
+
+        p {
+          // 避免无法正确换行
+          word-break: break-all;
+        }
+      }
+    }
+
+    .flex-gap {
+      flex-basis: 170px;
+      flex-shrink: 0;
+    }
+
+    .nav-col {
+      flex: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .item {
+          a {
+            color: #666666;
+          }
+        }
+
+        &.col-2 {
+          height: 136px;
+        }
+
+        &.col-1,
+        &.col-3 {
+          height: 209px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-top: 60px;
+      margin-bottom: 91.26px;
+      width: 90%;
+      max-width: 1065px;
+      font-size: 15px;
+
+      .company-info-col {
+        .logo {
+          margin-bottom: 45px;
+        }
+
+        address {
+          margin-bottom: 35px;
+        }
+      }
+
+      .flex-gap {
+        flex-grow: 1;
+      }
+
+      .nav-col {
+        flex-basis: 400px;
+        flex-grow: 0;
+        flex-shrink: 1;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      margin-top: 50px;
+      margin-bottom: 76px;
+      width: 95%;
+      max-width: 893px;
+      font-size: 14px;
+
+      .company-info-col {
+        .logo {
+          margin-bottom: 35px;
+          width: 100px;
+        }
+
+        address {
+          margin-bottom: 25px;
+        }
+
+        .copyright {
+          width: 160px;
+        }
+      }
+
+      .flex-gap {
+        flex: auto;
+      }
+
+      .nav-col {
+        flex-basis: 400px;
+        flex-shrink: 0;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+      margin-bottom: 60px;
+
+      .nav-col {
+        flex-basis: 310px;
+
+        .nav-list {
+          &.col-2 {
+            height: 100px;
+          }
+
+          &.col-1,
+          &.col-3 {
+            height: 180px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      margin-top: 30px;
+      margin-bottom: 40px;
+
+      .company-info-col {
+        .copyright {
+          width: 150px;
+        }
+      }
+
+      .nav-col {
+        flex-direction: column;
+        flex-basis: 280px;
+        justify-content: space-around;
+
+        .nav-list {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: initial;
+
+          .item {
+            position: relative;
+            flex: none;
+            line-height: 2;
+
+            &:not(:last-child) {
+              margin-right: 10px;
+
+              &::after {
+                position: absolute;
+                right: -6px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 10px;
+                content: '';
+                background-color: #585858;
+              }
+            }
+          }
+
+          &.col-2 {
+            height: auto;
+          }
+
+          &.col-1,
+          &.col-3 {
+            height: auto;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 513px) {
+      .company-info-col {
+        font-size: 12px;
+
+        .logo {
+          margin-bottom: 15px;
+          max-width: 100%;
+          width: 85px;
+        }
+
+        address {
+          margin-bottom: 12px;
+        }
+      }
+
+      .nav-col {
+        flex-basis: 190px;
+        height: 160px;
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      .company-info-col {
+        flex-shrink: 1;
+
+        .copyright {
+          width: 120px;
+        }
+      }
+
+      .nav-col {
+        height: auto;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .company-info-col {
+        .copyright {
+          width: 100%;
+        }
+      }
+
+      .flex-gap {
+        width: 30px;
+        flex: none;
+      }
+    }
+  }
+}

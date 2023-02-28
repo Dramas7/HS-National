@@ -1,0 +1,449 @@
+/************** utils start ***************/
+/************** utils end *****************/
+/************** 标题 start****************/
+/************** 标题 end****************/
+/**************** 简单类样式 start*************/
+.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner {
+  cursor: pointer;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+}
+/**************** 简单类样式 end***************/
+.contact {
+  font-family: Source Han Sans CN;
+}
+.contact .banner {
+  height: 578px;
+}
+.contact .contact-information {
+  display: flow-root;
+  margin: 0 auto;
+  width: 1347px;
+}
+.contact .contact-information .section-title {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+.contact .contact-information .section-title .main-title {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+.contact .contact-information .section-title .main-title span {
+  padding: 0 45px;
+  font-size: 45px;
+  font-weight: 200;
+}
+.contact .contact-information .section-title .main-title::before {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+  transform-origin: 0 0;
+  transform: rotate(180deg);
+}
+.contact .contact-information .section-title .main-title::after {
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+}
+.contact .contact-information .section-title .sub-title {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1400px) {
+  .contact .contact-information .section-title .main-title {
+    margin-bottom: -10px;
+  }
+  .contact .contact-information .section-title .main-title span {
+    padding: 0 35px;
+    font-size: 40px;
+  }
+  .contact .contact-information .section-title .sub-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contact .contact-information .section-title {
+    width: 95%;
+  }
+  .contact .contact-information .section-title .main-title {
+    margin-bottom: -20px;
+  }
+  .contact .contact-information .section-title .main-title span {
+    padding: 0 25px;
+    font-size: 35px;
+  }
+  .contact .contact-information .section-title .sub-title {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contact .contact-information .section-title {
+    width: 95%;
+  }
+  .contact .contact-information .section-title .main-title {
+    margin-bottom: -25px;
+  }
+  .contact .contact-information .section-title .main-title span {
+    padding: 0 22px;
+    font-size: 32px;
+  }
+  .contact .contact-information .section-title .sub-title {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .contact-information .section-title {
+    width: 95%;
+  }
+  .contact .contact-information .section-title .main-title {
+    margin-bottom: -30px;
+  }
+  .contact .contact-information .section-title .main-title span {
+    padding: 0 20px;
+    font-size: 29px;
+  }
+  .contact .contact-information .section-title .sub-title {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact .contact-information .section-title {
+    width: 95%;
+  }
+  .contact .contact-information .section-title .main-title {
+    margin-bottom: -32px;
+  }
+  .contact .contact-information .section-title .main-title span {
+    padding: 0 10px;
+    font-size: 26px;
+  }
+  .contact .contact-information .section-title .sub-title {
+    font-size: 17px;
+  }
+}
+.contact .contact-information .medium-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+.contact .contact-information .medium-list .item {
+  flex-basis: 280px;
+  color: #1b1b1b;
+  margin: 30px;
+}
+.contact .contact-information .medium-list .item .no {
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 500;
+}
+.contact .contact-information .medium-list .item .title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.contact .contact-information .medium-list .item .detail {
+  margin-bottom: 55px;
+  font-size: 13px;
+  color: #9a9a9a;
+}
+.contact .contact-information .medium-list .item .consult-now {
+  font-size: 16px;
+  font-weight: 500;
+  color: #32b16c;
+  border: none;
+  background-color: transparent;
+}
+.contact .contact-information .feedback {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+  margin-bottom: 110px;
+}
+.contact .contact-information .feedback .submit-area {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.contact .contact-information .feedback .submit-area .widget-list {
+  width: 770px;
+}
+.contact .contact-information .feedback .submit-area .widget-list .item:nth-child(-n + 2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+.contact .contact-information .feedback .submit-area .widget-list .item:nth-child(-n + 2) input[type='text'] {
+  flex: 1;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #bfbfbf;
+  font-size: 16px;
+  font-weight: 400;
+  color: #313131;
+}
+.contact .contact-information .feedback .submit-area .widget-list .item:nth-child(-n + 2) label {
+  flex: none;
+  display: inline-block;
+  margin-right: 19px;
+  margin-bottom: 3px;
+  width: 11px;
+  height: 11px;
+  background-color: #bfbfbf;
+  border-radius: 50%;
+}
+.contact .contact-information .feedback .submit-area .widget-list .item:nth-child(3) {
+  position: relative;
+  margin-bottom: 25px;
+}
+.contact .contact-information .feedback .submit-area .widget-list .item:nth-child(3) textarea {
+  position: relative;
+  border: none;
+  padding: 30px;
+  width: 100%;
+  height: 205px;
+  background: #e8e8e8;
+  resize: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  color: #313131;
+}
+.contact .contact-information .feedback .submit-area .widget-list .item:nth-child(3) .words-count {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #313131;
+}
+.contact .contact-information .feedback .submit-area .widget-list .item:last-child input[type='submit'] {
+  width: 108px;
+  height: 42px;
+  color: #fff;
+  background: #32b16c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact .contact-information .feedback .title {
+  grid-area: 1 / 2 / 2 / 3;
+  color: #1b1b1b;
+  font-weight: 500;
+  margin-left: 200px;
+  margin-top: -30px;
+}
+.contact .contact-information .feedback .title .main-title {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.contact .contact-information .feedback .title .sub-title {
+  font-size: 24px;
+}
+.contact .contact-information .feedback .company-info {
+  grid-area: 2 / 2 / 3 / 3;
+  margin-top: -57px;
+  margin-left: 200px;
+}
+.contact .contact-information .feedback .company-info .company-name {
+  margin-bottom: 55px;
+}
+.contact .contact-information .feedback .company-info .company-name .words {
+  margin-bottom: 5px;
+  font-size: 27px;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+.contact .contact-information .feedback .company-info .company-name .spell {
+  font-size: 18px;
+  font-weight: 300;
+  color: #1b1b1b;
+}
+.contact .contact-information .feedback .company-info .phone {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 500;
+  color: #313131;
+}
+.contact .contact-information .feedback .company-info .email,
+.contact .contact-information .feedback .company-info .address {
+  font-size: 16px;
+  font-weight: 500;
+  color: #313131;
+  line-height: 1.5;
+}
+.contact .contact-information .feedback .company-info .email span:nth-child(1),
+.contact .contact-information .feedback .company-info .address span:nth-child(1) {
+  display: inline-block;
+  width: 90px;
+}
+@media screen and (max-width: 1430px) {
+  .contact .contact-information {
+    width: 95%;
+  }
+  .contact .contact-information .section-title {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .contact .contact-information .medium-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .contact .contact-information .feedback {
+    justify-items: center;
+    align-items: center;
+    column-gap: 100px;
+    margin-bottom: 90px;
+  }
+  .contact .contact-information .feedback .submit-area {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .contact .contact-information .feedback .title {
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: flex-end;
+  }
+  .contact .contact-information .feedback .company-info {
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: flex-start;
+  }
+  .contact .contact-information .feedback .title,
+  .contact .contact-information .feedback .company-info {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contact .contact-information .section-title {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .contact .contact-information .feedback {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contact .contact-information .section-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .contact .contact-information .medium-list {
+    margin-bottom: 80px;
+  }
+  .contact .contact-information .feedback {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 50px;
+  }
+  .contact .contact-information .feedback .title,
+  .contact .contact-information .feedback .submit-area,
+  .contact .contact-information .feedback .company-info {
+    grid-area: auto;
+    text-align: center;
+  }
+  .contact .contact-information .feedback .title {
+    justify-self: center;
+    margin-bottom: 40px;
+  }
+  .contact .contact-information .feedback .company-info {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: center;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .contact .contact-information .feedback .submit-area {
+    justify-self: stretch;
+  }
+  .contact .contact-information .feedback .submit-area .widget-list {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .contact-information .section-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .contact .contact-information .medium-list {
+    margin-bottom: 40px;
+  }
+  .contact .contact-information .feedback {
+    margin-bottom: 40px;
+  }
+  .contact .contact-information .feedback .title {
+    margin-bottom: 25px;
+  }
+  .contact .contact-information .feedback .title .main-title {
+    font-size: 50px;
+  }
+  .contact .contact-information .feedback .title .sub-title {
+    font-size: 20px;
+  }
+  .contact .contact-information .feedback .company-info .company-name {
+    margin-bottom: 25px;
+  }
+  .contact .contact-information .feedback .company-info .company-name .words {
+    font-size: 24px;
+  }
+  .contact .contact-information .feedback .company-info .company-name .spell {
+    font-size: 14px;
+  }
+  .contact .contact-information .feedback .company-info .phone {
+    font-size: 17px;
+  }
+  .contact .contact-information .feedback .company-info .email,
+  .contact .contact-information .feedback .company-info .address {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact .contact-information {
+    margin-bottom: 0;
+  }
+  .contact .contact-information .section-title {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .contact .contact-information .medium-list {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 732px) {
+  .contact .contact-information .medium-list {
+    text-align: center;
+  }
+}

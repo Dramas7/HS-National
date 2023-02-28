@@ -1,0 +1,291 @@
+/************** utils start ***************/
+/************** utils end *****************/
+/************** 标题 start****************/
+/************** 标题 end****************/
+/**************** 简单类样式 start*************/
+.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner {
+  cursor: pointer;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+}
+/**************** 简单类样式 end***************/
+.information {
+  font-family: Source Han Sans CN;
+}
+.information .banner {
+  position: relative;
+  margin-bottom: 240px;
+  height: 587px;
+}
+.information .banner .info-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transform: translateY(calc((200px / 2 + (260px - 200px)) * -1));
+}
+.information .banner .info-list li {
+  position: relative;
+  flex-basis: 300px;
+  padding-right: 65px;
+  padding-left: 55px;
+  height: 200px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.information .banner .info-list li:first-child {
+  padding-left: 30px;
+  flex-basis: 260px;
+  height: 260px;
+}
+.information .banner .info-list li:first-child h3 {
+  margin-top: 90px;
+}
+.information .banner .info-list li:last-child {
+  margin-right: 55px;
+}
+.information .banner .info-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.information .banner .info-list li h3 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.information .banner .info-list li p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.information .event-information {
+  display: flow-root;
+}
+.information .event-information .section-title {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+.information .event-information .section-title .main-title {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+.information .event-information .section-title .main-title span {
+  padding: 0 45px;
+  font-size: 45px;
+  font-weight: 200;
+}
+.information .event-information .section-title .main-title::before {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+  transform-origin: 0 0;
+  transform: rotate(180deg);
+}
+.information .event-information .section-title .main-title::after {
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+}
+.information .event-information .section-title .sub-title {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1400px) {
+  .information .event-information .section-title .main-title {
+    margin-bottom: -10px;
+  }
+  .information .event-information .section-title .main-title span {
+    padding: 0 35px;
+    font-size: 40px;
+  }
+  .information .event-information .section-title .sub-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .information .event-information .section-title {
+    width: 95%;
+  }
+  .information .event-information .section-title .main-title {
+    margin-bottom: -20px;
+  }
+  .information .event-information .section-title .main-title span {
+    padding: 0 25px;
+    font-size: 35px;
+  }
+  .information .event-information .section-title .sub-title {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .information .event-information .section-title {
+    width: 95%;
+  }
+  .information .event-information .section-title .main-title {
+    margin-bottom: -25px;
+  }
+  .information .event-information .section-title .main-title span {
+    padding: 0 22px;
+    font-size: 32px;
+  }
+  .information .event-information .section-title .sub-title {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .information .event-information .section-title {
+    width: 95%;
+  }
+  .information .event-information .section-title .main-title {
+    margin-bottom: -30px;
+  }
+  .information .event-information .section-title .main-title span {
+    padding: 0 20px;
+    font-size: 29px;
+  }
+  .information .event-information .section-title .sub-title {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .information .event-information .section-title {
+    width: 95%;
+  }
+  .information .event-information .section-title .main-title {
+    margin-bottom: -32px;
+  }
+  .information .event-information .section-title .main-title span {
+    padding: 0 10px;
+    font-size: 26px;
+  }
+  .information .event-information .section-title .sub-title {
+    font-size: 17px;
+  }
+}
+.information .event-information .container {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 95%;
+  height: 0;
+  padding-bottom: 45.26%;
+}
+.information .event-information .video-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr [btn-start] 1fr 1fr [btn-end] repeat(3, 1fr);
+  grid-template-rows: [btn-start] 1fr [btn-end] 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+.information .event-information .video-area .item.see-more {
+  grid-area: btn;
+  text-align: center;
+  background-color: pink;
+  cursor: pointer;
+}
+.information .event-information .video-area .item.see-more button {
+  position: relative;
+  margin-top: 13%;
+  font-size: 57px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+}
+.information .event-information .video-area .item.see-more button::after {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 12px;
+  content: '';
+  background-color: #fff;
+}
+.information .event-information .video-area .item:nth-child(2) {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: red;
+}
+.information .event-information .video-area .item:nth-child(3) {
+  grid-area: 2 / 1 / 4 / 2;
+  background-color: aqua;
+}
+.information .event-information .video-area .item:nth-child(4) {
+  grid-area: 2 / 2 / 4 / 4;
+  background-color: aquamarine;
+}
+.information .event-information .video-area .item:nth-child(5) {
+  grid-area: 1 / 4 / 4 / 6;
+  background-color: khaki;
+}
+.information .event-information .video-area .item:nth-child(6) {
+  grid-area: 1 / 6 / 3 / 7;
+  background-color: black;
+}
+.information .event-information .video-area .item:nth-child(7) {
+  grid-area: 3 / 6 / 4 / 7;
+  background-color: blueviolet;
+}
+@media screen and (max-width: 1400px) {
+  .information .event-information .video-area .item.see-more button {
+    font-size: 45px;
+  }
+  .information .event-information .video-area .item.see-more button::after {
+    width: 30%;
+    height: 6px;
+    bottom: -25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .information .event-information .video-area .item.see-more button {
+    font-size: 30px;
+  }
+  .information .event-information .video-area .item.see-more button::after {
+    height: 5px;
+    bottom: -15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .information .event-information .video-area .item.see-more button {
+    font-size: 22px;
+  }
+  .information .event-information .video-area .item.see-more button::after {
+    height: 4px;
+    bottom: -10px;
+  }
+}

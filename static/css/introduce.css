@@ -1,0 +1,541 @@
+/************** utils start ***************/
+/************** utils end *****************/
+/************** 标题 start****************/
+/************** 标题 end****************/
+/**************** 简单类样式 start*************/
+.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner {
+  cursor: pointer;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+}
+/**************** 简单类样式 end***************/
+.introduce {
+  font-family: Source Han Sans CN;
+}
+.introduce .banner {
+  height: 578px;
+}
+.introduce .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.introduce .company-profile {
+  position: relative;
+  display: flow-root;
+  background-image: url('../imgs/introduce/公司简介背景图.png');
+}
+.introduce .company-profile .section-title {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 100px;
+  margin-top: 75px;
+}
+.introduce .company-profile .section-title .main-title {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+.introduce .company-profile .section-title .main-title span {
+  padding: 0 45px;
+  font-size: 45px;
+  font-weight: 200;
+}
+.introduce .company-profile .section-title .main-title::before {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+  transform-origin: 0 0;
+  transform: rotate(180deg);
+}
+.introduce .company-profile .section-title .main-title::after {
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+}
+.introduce .company-profile .section-title .sub-title {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1400px) {
+  .introduce .company-profile .section-title .main-title {
+    margin-bottom: -10px;
+  }
+  .introduce .company-profile .section-title .main-title span {
+    padding: 0 35px;
+    font-size: 40px;
+  }
+  .introduce .company-profile .section-title .sub-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .introduce .company-profile .section-title {
+    width: 95%;
+  }
+  .introduce .company-profile .section-title .main-title {
+    margin-bottom: -20px;
+  }
+  .introduce .company-profile .section-title .main-title span {
+    padding: 0 25px;
+    font-size: 35px;
+  }
+  .introduce .company-profile .section-title .sub-title {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .introduce .company-profile .section-title {
+    width: 95%;
+  }
+  .introduce .company-profile .section-title .main-title {
+    margin-bottom: -25px;
+  }
+  .introduce .company-profile .section-title .main-title span {
+    padding: 0 22px;
+    font-size: 32px;
+  }
+  .introduce .company-profile .section-title .sub-title {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .introduce .company-profile .section-title {
+    width: 95%;
+  }
+  .introduce .company-profile .section-title .main-title {
+    margin-bottom: -30px;
+  }
+  .introduce .company-profile .section-title .main-title span {
+    padding: 0 20px;
+    font-size: 29px;
+  }
+  .introduce .company-profile .section-title .sub-title {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .introduce .company-profile .section-title {
+    width: 95%;
+  }
+  .introduce .company-profile .section-title .main-title {
+    margin-bottom: -32px;
+  }
+  .introduce .company-profile .section-title .main-title span {
+    padding: 0 10px;
+    font-size: 26px;
+  }
+  .introduce .company-profile .section-title .sub-title {
+    font-size: 17px;
+  }
+}
+.introduce .company-profile .profile {
+  margin: 0 auto;
+  margin-bottom: 90px;
+  width: 1196px;
+  font-size: 24px;
+}
+.introduce .company-profile .profile p {
+  font-weight: 400;
+  color: #4d4d4d;
+  line-height: 51px;
+}
+.introduce .company-profile .profile > p {
+  margin-bottom: 80px;
+}
+.introduce .company-profile .profile hr {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 1000px;
+  height: 4px;
+  background: #687253;
+}
+.introduce .company-profile .profile > section h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  color: #333333;
+}
+.introduce .company-profile .core-value {
+  display: flow-root;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+  background: linear-gradient(0deg, #2b1b77, #4730ba);
+}
+.introduce .company-profile .core-value h3 {
+  margin-top: 70px;
+  margin-bottom: 85px;
+  font-size: 30px;
+}
+.introduce .company-profile .core-value .keywords-dfn-list {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.introduce .company-profile .core-value .keywords-dfn-list > *:not(:last-child) {
+  margin-bottom: 60px;
+}
+.introduce .company-profile .core-value .keywords-dfn-list .keywords {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 60px;
+  font-weight: bold;
+}
+.introduce .company-profile .core-value .keywords-dfn-list .keywords span {
+  margin: 0 25px;
+}
+.introduce .company-profile .core-value .keywords-dfn-list dd {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 2;
+}
+.introduce .company-profile .goals-and-visions {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(2, 340px);
+  justify-content: center;
+  row-gap: 60px;
+  margin-top: 94px;
+  margin-bottom: 170px;
+}
+.introduce .company-profile .goals-and-visions .vignette img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.introduce .company-profile .goals-and-visions section h3 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+}
+.introduce .company-profile .goals-and-visions section p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 2;
+}
+.introduce .company-profile .goals-and-visions section.goals {
+  padding-left: 53px;
+}
+.introduce .company-profile .goals-and-visions section.visions {
+  padding-right: 53px;
+}
+@media screen and (max-width: 1300px) {
+  .introduce .company-profile .core-value h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list {
+    margin-bottom: 80px;
+    width: 95%;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list .keywords {
+    font-size: 50px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list dd {
+    font-size: 22px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list > *:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .introduce .company-profile .section-title {
+    margin-top: 65px;
+    margin-bottom: 80px;
+  }
+  .introduce .company-profile .profile {
+    margin-bottom: 70px;
+    width: 95%;
+    font-size: 22px;
+  }
+  .introduce .company-profile .profile > p {
+    margin-bottom: 60px;
+  }
+  .introduce .company-profile .profile hr {
+    width: 95%;
+  }
+  .introduce .company-profile .profile > section h3 {
+    font-size: 22px;
+  }
+  .introduce .company-profile .goals-and-visions {
+    grid-template-columns: 700px;
+    grid-template-rows: repeat(2, 3fr 2fr);
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .introduce .company-profile .goals-and-visions > *:last-child {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .introduce .company-profile .goals-and-visions section {
+    text-align: center;
+    align-items: center;
+  }
+  .introduce .company-profile .goals-and-visions section.goals {
+    padding-left: 0;
+  }
+  .introduce .company-profile .goals-and-visions section.visions {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .introduce .company-profile .section-title {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .introduce .company-profile .profile {
+    margin-bottom: 55px;
+    width: 95%;
+    font-size: 20px;
+  }
+  .introduce .company-profile .profile > p {
+    margin-bottom: 50px;
+  }
+  .introduce .company-profile .profile > section h3 {
+    font-size: 20px;
+  }
+  .introduce .company-profile .core-value h3 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 26px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list {
+    margin-bottom: 60px;
+    width: 95%;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list .keywords {
+    font-size: 40px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list dd {
+    font-size: 20px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list > *:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .introduce .company-profile .section-title {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .introduce .company-profile .profile {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .introduce .company-profile .profile > p {
+    margin-bottom: 30px;
+  }
+  .introduce .company-profile .profile > section h3 {
+    font-size: 20px;
+  }
+  .introduce .company-profile .core-value h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list {
+    margin-bottom: 40px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list .keywords {
+    font-size: 30px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list .keywords span {
+    margin: 0 10px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list dd {
+    font-size: 19px;
+  }
+  .introduce .company-profile .core-value .keywords-dfn-list > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .introduce .company-profile .goals-and-visions {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+  .introduce .company-profile .goals-and-visions .vignette {
+    max-height: 336px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .introduce .company-profile .section-title {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  .introduce .company-profile .profile {
+    margin-bottom: 30px;
+    width: 95%;
+    font-size: 18px;
+  }
+  .introduce .company-profile .profile > p {
+    margin-bottom: 25px;
+  }
+  .introduce .company-profile .profile > section h3 {
+    font-size: 18px;
+  }
+}
+.introduce .enterprise-architecture {
+  display: flow-root;
+}
+.introduce .enterprise-architecture .section-title {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.introduce .enterprise-architecture .section-title .main-title {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+.introduce .enterprise-architecture .section-title .main-title span {
+  padding: 0 45px;
+  font-size: 45px;
+  font-weight: 200;
+}
+.introduce .enterprise-architecture .section-title .main-title::before {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+  transform-origin: 0 0;
+  transform: rotate(180deg);
+}
+.introduce .enterprise-architecture .section-title .main-title::after {
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+}
+.introduce .enterprise-architecture .section-title .sub-title {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1400px) {
+  .introduce .enterprise-architecture .section-title .main-title {
+    margin-bottom: -10px;
+  }
+  .introduce .enterprise-architecture .section-title .main-title span {
+    padding: 0 35px;
+    font-size: 40px;
+  }
+  .introduce .enterprise-architecture .section-title .sub-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .introduce .enterprise-architecture .section-title {
+    width: 95%;
+  }
+  .introduce .enterprise-architecture .section-title .main-title {
+    margin-bottom: -20px;
+  }
+  .introduce .enterprise-architecture .section-title .main-title span {
+    padding: 0 25px;
+    font-size: 35px;
+  }
+  .introduce .enterprise-architecture .section-title .sub-title {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .introduce .enterprise-architecture .section-title {
+    width: 95%;
+  }
+  .introduce .enterprise-architecture .section-title .main-title {
+    margin-bottom: -25px;
+  }
+  .introduce .enterprise-architecture .section-title .main-title span {
+    padding: 0 22px;
+    font-size: 32px;
+  }
+  .introduce .enterprise-architecture .section-title .sub-title {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .introduce .enterprise-architecture .section-title {
+    width: 95%;
+  }
+  .introduce .enterprise-architecture .section-title .main-title {
+    margin-bottom: -30px;
+  }
+  .introduce .enterprise-architecture .section-title .main-title span {
+    padding: 0 20px;
+    font-size: 29px;
+  }
+  .introduce .enterprise-architecture .section-title .sub-title {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .introduce .enterprise-architecture .section-title {
+    width: 95%;
+  }
+  .introduce .enterprise-architecture .section-title .main-title {
+    margin-bottom: -32px;
+  }
+  .introduce .enterprise-architecture .section-title .main-title span {
+    padding: 0 10px;
+    font-size: 26px;
+  }
+  .introduce .enterprise-architecture .section-title .sub-title {
+    font-size: 17px;
+  }
+}
+.introduce .enterprise-architecture .illustration {
+  margin-bottom: 50px;
+}

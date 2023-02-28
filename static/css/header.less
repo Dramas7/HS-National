@@ -1,0 +1,336 @@
+// 定义宽度从0%向某个自定义宽度延伸的动画
+.underlineExtend(@width) {
+  @keyframes underlineExtend {
+    from {
+      width: 0%;
+    }
+    to {
+      width: @width;
+    }
+  }
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  height: 155px;
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Source Han Sans CN;
+
+  .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .gap-left {
+      width: 362px;
+    }
+
+    .gap-middle {
+      flex: none;
+      width: 391px;
+    }
+
+    .logo {
+      flex: none;
+      width: 122px;
+      height: 45px;
+    }
+
+    .top-nav {
+      flex: none;
+      margin-right: 124px;
+
+      .nav-list {
+        display: flex;
+
+        .item {
+          a {
+            position: relative;
+            color: #333333;
+            transition: color 0.2s ease;
+
+            &.active {
+              color: #c3272b;
+
+              &::after {
+                .underlineExtend(18px);
+                position: absolute;
+                display: block;
+                left: 50%;
+                bottom: -24px;
+                transform: translateX(-50%);
+                width: 18px;
+                height: 2px;
+                content: '';
+                background: #c3272b;
+                animation: underlineExtend 0.2s ease forwards;
+              }
+            }
+
+            &:hover {
+              color: #c3272b;
+            }
+
+            &:active {
+              color: #eb0c13;
+            }
+          }
+
+          &:not(:last-child) {
+            margin-right: 55px;
+          }
+        }
+      }
+    }
+
+    .langue-bar {
+      flex: none;
+      margin-right: 58px;
+
+      a {
+        color: #333333;
+
+        &.active {
+          color: #d12f39;
+        }
+
+        &:not(.active):hover {
+          color: #000;
+        }
+        // 此处使用否定伪类提高权重，所否定的内容无实际意义
+        &:not(#foo):active {
+          color: #eb0c13;
+        }
+      }
+    }
+
+    .menu {
+      display: none;
+
+      .menu-btn {
+        box-sizing: border-box;
+        width: 35px;
+        height: 35px;
+        padding: 7px 0;
+        background-color: #999999;
+        background-clip: content-box;
+        border: none;
+        border-top: 7px solid #999999;
+        border-bottom: 7px solid #999999;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          background-color: #7c7c7c;
+          border-top-color: #7c7c7c;
+          border-bottom-color: #7c7c7c;
+        }
+
+        &.active {
+          background-color: #d12f39;
+          border-top-color: #d12f39;
+          border-bottom-color: #d12f39;
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+
+      .drop-down-area {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 120px;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px #6262622f solid;
+        box-shadow: 0 7px 5px #0a0a0a0c;
+
+        .langue-bar {
+          margin-top: 30px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .nav-list {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-items: center;
+          margin-bottom: 30px;
+
+          .item {
+            a {
+              position: relative;
+              color: #333333;
+
+              &.active {
+                color: #d12f39;
+
+                &::after {
+                  position: absolute;
+                  left: 0;
+                  bottom: -7px;
+                  width: 100%;
+                  height: 2px;
+                  display: block;
+                  content: '';
+                  background-color: currentColor;
+                }
+              }
+
+              &:hover {
+                color: #d12f39;
+              }
+            }
+
+            &:not(:first-child) {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1600px) {
+      width: 95%;
+      margin: 0 auto;
+
+      .gap-left {
+        display: none;
+      }
+
+      .gap-middle {
+        flex: auto;
+      }
+
+      .langue-bar {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      font-size: 21px;
+
+      .logo {
+        width: 105px;
+        height: auto;
+      }
+
+      .top-nav {
+        margin-right: 65px;
+        // 在对应的断点调整header高度
+        transform: translateY(-7%);
+
+        .nav-list {
+          .item {
+            a {
+              &.active {
+                &::after {
+                  bottom: -15px;
+                }
+              }
+            }
+
+            &:not(:last-child) {
+              margin-right: 30px;
+            }
+          }
+        }
+      }
+
+      .langue-bar {
+        // 在对应的断点调整header高度
+        transform: translateY(-7%);
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: 17px;
+
+      .logo {
+        width: 95px;
+        height: auto;
+      }
+
+      .top-nav {
+        margin-right: 40px;
+        // 未调上移，与logo视觉对齐，保持和谐
+        transform: translateY(-9%);
+
+        .nav-list {
+          .item {
+            a {
+              &.active {
+                &::after {
+                  bottom: -10px;
+                }
+              }
+            }
+
+            &:not(:last-child) {
+              margin-right: 22px;
+            }
+          }
+        }
+      }
+
+      .langue-bar {
+        // 未调上移，与logo视觉对齐，保持和谐
+        transform: translateY(-9%);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      justify-content: space-between;
+      font-size: 18px;
+
+      .logo {
+        width: 105px;
+      }
+
+      .gap-middle {
+        display: none;
+      }
+
+      .top-nav {
+        display: none;
+      }
+
+      & > .langue-bar {
+        display: none;
+      }
+
+      .menu {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .menu {
+        .drop-down-area {
+          top: 100px;
+        }
+      }
+    }
+  }
+
+  // 在对应的断点调整header高度
+  @media screen and (max-width: 1400px) {
+    height: 135px;
+  }
+
+  @media screen and (max-width: 992px) {
+    height: 120px;
+  }
+
+  @media screen and (max-width: 576px) {
+    height: 100px;
+  }
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./static/css/reset.css">
+  <link rel="stylesheet" href="./static/css/global.css">
+  <link rel="stylesheet" href="./static/css/header.css">
+  <link rel="stylesheet" href="./static/css/footer.css">
+  <link rel="stylesheet" href="./static/css/home.css">
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/header.js"></script>
+  <script src="./static/js/footer.js"></script>
+  <script src="./static/js/home.js"></script>
+</head>
+
+<body>
+  <!-- 页面头部 -->
+  <header class="header">
+    <!-- 用于协助响应式设计的容器 -->
+    <div class="container">
+      <!-- 类名为gap的元素节点仅用于协助响应式设计，无实际内容 -->
+      <div class="gap-left"></div>
+      <!-- 网站logo放置区 -->
+      <div class="logo">
+        <img src="./static/imgs/logo.png" alt="logo">
+      </div>
+      <!-- 类名为gap的元素节点仅用于协助响应式设计，无实际内容 -->
+      <div class="gap-middle"></div>
+      <!-- 顶部导航栏 -->
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li class="item"><a href="javascript:;" data-home>首页</a></li>
+          <li class="item"><a href="javascript:;" data-introduce>公司介绍</a></li>
+          <li class="item"><a href="javascript:;" data-project>项目介绍</a></li>
+          <li class="item"><a href="javascript:;" data-information>公司资讯</a></li>
+          <li class="item"><a href="javascript:;" data-contact>联系我们</a></li>
+          <li class="item"><a href="javascript:;" data-participate>招商平台</a></li>
+        </ul>
+      </nav>
+      <!-- 语言栏 -->
+      <div class="langue-bar">
+        <a href="javascript:;" class="chinese active">中</a>/<a href="javascript:;" class="english">英</a>
+      </div>
+      <!-- 缩放到768px的断点后显示的菜单栏 -->
+      <div class="menu">
+        <button class="menu-btn"></button>
+        <!-- 下拉区域 -->
+        <div class="drop-down-area">
+          <!-- 语言栏 -->
+          <div class="langue-bar">
+            <a href="javascript:;" class="chinese active">中</a>/<a href="javascript:;" class="english">英</a>
+          </div>
+          <!-- 导航列表 -->
+          <ul class="nav-list">
+            <li class="item"><a href="javascript:;" data-home>首页</a></li>
+            <li class="item"><a href="javascript:;" data-introduce>公司介绍</a></li>
+            <li class="item"><a href="javascript:;" data-project>项目介绍</a></li>
+            <li class="item"><a href="javascript:;" data-information>公司资讯</a></li>
+            <li class="item"><a href="javascript:;" data-contact>联系我们</a></li>
+            <li class="item"><a href="javascript:;" data-participate>招商平台</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 主体区域 -->
+  <main class="home">
+    <div class="banner">
+      <img src="./static/imgs/home/banner.png" alt="banner">
+    </div>
+    <!-- 公司简介 -->
+    <section class="company-profile">
+      <!-- 章节标题 -->
+      <h2 class="section-title">
+        <p class="main-title">
+          <span>COMPANY PROFILE</span>
+        </p>
+        <p class="sub-title">公司简介</p>
+      </h2>
+      <!-- 内容 -->
+      <div class="content">
+        <!-- 图像栏 -->
+        <div class="pic-column">
+          <img src="./static/imgs/home/模块1.png" alt="pic">
+        </div>
+        <!-- 文本栏 -->
+        <section class="text-column">
+          <h3 class="title">
+            <p class="main-title">COMPANY PROFILE</p>
+            <small class="sub-title">公司概括</small>
+          </h3>
+          <p class="detail">
+            红粟新生态产业科学实业双循环连锁平台是由 MRK
+            集团下属公司红粟新生态产业科学发展（广东）有限公司负责开发运营以及后期的整体维护。平台开发的负责人王文雄先生开发红粟新生态产业科学实业双循环连锁平台的初衷是依据全面响应和落实党中央，国务院，全国人大十三届五中全会的关
+          </p>
+          <button class="view-more">查看更多</button>
+        </section>
+      </div>
+    </section>
+    <!-- 项目介绍 -->
+    <section class="project-introduction">
+      <h2 class="section-title">
+        <p class="main-title">
+          <span>PROJECT INTRODUCTION</span>
+        </p>
+        <p class="sub-title">项目介绍</P>
+      </h2>
+      <!-- 概念定义列表 -->
+      <dl class="concept-list">
+        <div class="item">
+          <div class="icon">
+            <img src="./static/imgs/home/商超icom.png" alt="icon">
+          </div>
+          <dt>云仓</dt>
+          <dd>红粟新生态产业科学发展（广东）有限公司位于东莞松山湖高新技术开发区，是在高新技术应用领域中专业从事应用系统开发，信息安全服务的高新技术企业。</dd>
+        </div>
+        <div class="arrow">
+          <img src="./static/imgs/home/项目介绍箭头.png" alt="arrow">
+        </div>
+        <div class="item">
+          <div class="icon">
+            <img src="./static/imgs/home/易货icom.png" alt="icon">
+          </div>
+          <dt>易货</dt>
+          <dd>
+            红粟倡导“专业、务实、高效、创新“的企业精神，具有良好的内部机制。优良的工作环境以及良好的激励鼓励机制，吸引了一批年轻的、有学识的、具有实干精神的人才。高素质、高水平、高效率的人才是红粟新生态在当今激烈的市场中立于不败之地的保障。
+          </dd>
+        </div>
+        <div class="arrow">
+          <img src="./static/imgs/home/项目介绍箭头.png" alt="arrow">
+        </div>
+        <div class="item">
+          <i class="icon">
+            <img src="./static/imgs/home/商超icom.png" alt="icon">
+          </i>
+          <dt>商超</dt>
+          <dd>红粟长期专注于物业管理、生产制造，百货商城、市政运营管理等相关行业信息化领域，凭借多年在应用系统开发以及信息安全服务的积累的经验，红粟软件已经成为该领域内著名的应用系统解决方案提供商。</dd>
+        </div>
+      </dl>
+      <!-- 项目数据 -->
+      <ul class="project-data">
+        <li class="item">
+          <div class="icon">
+            <img src="./static/imgs/home/下载量.png" alt="icon">
+          </div>
+          <p class="count">9652</p>
+          <p class="desc">Download</p>
+        </li>
+        <li class="item">
+          <div class="icon">
+            <img src="./static/imgs/home/喜欢.png" alt="icon">
+          </div>
+          <p class="count">7489</p>
+          <p class="desc">Good Reviews</p>
+        </li>
+        <li class="item">
+          <div class="icon">
+            <img src="./static/imgs/home/组11.png" alt="icon">
+          </div>
+          <p class="count">960</p>
+          <p class="desc">Customer</p>
+        </li>
+        <li class="item">
+          <div class="icon">
+            <img src="./static/imgs/home/项目.png" alt="icon">
+          </div>
+          <p class="count">6400</p>
+          <p class="desc">Project</p>
+        </li>
+      </ul>
+    </section>
+    <!-- 合作伙伴 -->
+    <section class="cooperative-partner">
+      <h2 class="section-title">
+        <p class="main-title">
+          <span>COOPERATIVE PARTNER</span>
+        </p>
+        <p class="sub-title">合作伙伴</P>
+      </h2>
+      <!-- 商标区 -->
+      <div class="brand-area">
+        <!-- 商标列表 -->
+        <ul class="brand-list">
+          <li class="item" data-index="0"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="1"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="2"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="3"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="4"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="5"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="6"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="7"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="8"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="9"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="10"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="11"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="12"><a href="javascript:;"><img src="" alt="brand"></a></li>
+          <li class="item" data-index="13"><a href="javascript:;"><img src="" alt="brand"></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- 页面尾部 -->
+  <footer class="footer">
+    <!-- .container仅用于辅助进行响应式布局 -->
+    <div class="container">
+      <!-- 公司 logo等基本信息区 -->
+      <div class="company-info-col">
+        <!-- logo放置区 -->
+        <div class="logo">
+          <img src="./static/imgs/logo.png" alt="logo">
+        </div>
+        <!-- 联系信息 -->
+        <address>
+          <p class="phone"><span>电话:</span>+15858585858</p>
+          <p class="email"><span>邮箱:</span>xxxxxxxx@QQ.com</p>
+        </address>
+        <!-- 版权 -->
+        <p class="copyright">Copyright©2016-20122 红粟云 版权所有</p>
+      </div>
+      <!-- 仅用于弹性布局及响应式用，无实际意义 -->
+      <div class="flex-gap"></div>
+      <!-- 底部导航区 -->
+      <nav class="nav-col">
+        <ul class="nav-list col-1">
+          <li class="item"><a href="javascript:;">关于我们</a></li>
+          <li class="item"><a href="javascript:;">品牌故事</a></li>
+          <li class="item"><a href="javascript:;">品牌荣誉</a></li>
+          <li class="item"><a href="javascript:;">人才招聘</a></li>
+          <li class="item"><a href="javascript:;">联系我们</a></li>
+        </ul>
+        <ul class="nav-list col-2">
+          <li class="item"><a href="javscript:;">产品</a></li>
+          <li class="item"><a href="javscript:;">定制中心</a></li>
+          <li class="item"><a href="javscript:;">专业定制高端</a></li>
+        </ul>
+        <ul class="nav-list col-3">
+          <li class="item"><a href="javascript:;">支持</a></li>
+          <li class="item"><a href="javascript:;">条款和条件</a></li>
+          <li class="item"><a href="javascript:;">隐私</a></li>
+          <li class="item"><a href="javascript:;">帮助</a></li>
+          <li class="item"><a href="javascript:;">链接</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

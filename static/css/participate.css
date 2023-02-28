@@ -1,0 +1,449 @@
+/************** utils start ***************/
+/************** utils end *****************/
+/************** 标题 start****************/
+/************** 标题 end****************/
+/**************** 简单类样式 start*************/
+.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner {
+  cursor: pointer;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+}
+/**************** 简单类样式 end***************/
+.participate {
+  font-family: Source Han Sans CN;
+}
+.participate .banner {
+  height: 587px;
+}
+.participate .invitation-process {
+  display: flow-root;
+  margin: 0 auto;
+  width: 1520px;
+}
+.participate .invitation-process .section-title {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
+.participate .invitation-process .section-title .main-title {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+.participate .invitation-process .section-title .main-title span {
+  padding: 0 45px;
+  font-size: 45px;
+  font-weight: 200;
+}
+.participate .invitation-process .section-title .main-title::before {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+  transform-origin: 0 0;
+  transform: rotate(180deg);
+}
+.participate .invitation-process .section-title .main-title::after {
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+}
+.participate .invitation-process .section-title .sub-title {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1400px) {
+  .participate .invitation-process .section-title .main-title {
+    margin-bottom: -10px;
+  }
+  .participate .invitation-process .section-title .main-title span {
+    padding: 0 35px;
+    font-size: 40px;
+  }
+  .participate .invitation-process .section-title .sub-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .participate .invitation-process .section-title {
+    width: 95%;
+  }
+  .participate .invitation-process .section-title .main-title {
+    margin-bottom: -20px;
+  }
+  .participate .invitation-process .section-title .main-title span {
+    padding: 0 25px;
+    font-size: 35px;
+  }
+  .participate .invitation-process .section-title .sub-title {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .participate .invitation-process .section-title {
+    width: 95%;
+  }
+  .participate .invitation-process .section-title .main-title {
+    margin-bottom: -25px;
+  }
+  .participate .invitation-process .section-title .main-title span {
+    padding: 0 22px;
+    font-size: 32px;
+  }
+  .participate .invitation-process .section-title .sub-title {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .participate .invitation-process .section-title {
+    width: 95%;
+  }
+  .participate .invitation-process .section-title .main-title {
+    margin-bottom: -30px;
+  }
+  .participate .invitation-process .section-title .main-title span {
+    padding: 0 20px;
+    font-size: 29px;
+  }
+  .participate .invitation-process .section-title .sub-title {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .participate .invitation-process .section-title {
+    width: 95%;
+  }
+  .participate .invitation-process .section-title .main-title {
+    margin-bottom: -32px;
+  }
+  .participate .invitation-process .section-title .main-title span {
+    padding: 0 10px;
+    font-size: 26px;
+  }
+  .participate .invitation-process .section-title .sub-title {
+    font-size: 17px;
+  }
+}
+.participate .invitation-process .process-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-bottom: 150px;
+  font-weight: 400;
+  color: #000000;
+}
+.participate .invitation-process .process-list .item {
+  padding: 20px 38px 55px;
+  width: 360px;
+  height: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.participate .invitation-process .process-list .item .icon {
+  margin-bottom: 25px;
+  width: 40px;
+  height: 38px;
+}
+.participate .invitation-process .process-list .item h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.participate .invitation-process .process-list .item p {
+  font-size: 15px;
+}
+@media screen and (max-width: 1600px) {
+  .participate .invitation-process {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .participate .invitation-process .process-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .participate .invitation-process .process-list .item:nth-child(1),
+  .participate .invitation-process .process-list .item:nth-child(3) {
+    justify-self: flex-end;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .participate .invitation-process .process-list {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .participate .invitation-process .process-list {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .participate .invitation-process .process-list {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .participate .invitation-process .process-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .participate .invitation-process .process-list .item:nth-child(1),
+  .participate .invitation-process .process-list .item:nth-child(3) {
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .participate .invitation-process .process-list {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .participate .invitation-process .process-list {
+    margin-bottom: 40px;
+  }
+}
+.participate .contact-information {
+  display: flow-root;
+  margin: 0 auto;
+  width: 1547px;
+}
+.participate .contact-information .section-title {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 110px;
+}
+.participate .contact-information .section-title .main-title {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+.participate .contact-information .section-title .main-title span {
+  padding: 0 45px;
+  font-size: 45px;
+  font-weight: 200;
+}
+.participate .contact-information .section-title .main-title::before {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+  transform-origin: 0 0;
+  transform: rotate(180deg);
+}
+.participate .contact-information .section-title .main-title::after {
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  top: 50%;
+  width: 2000px;
+  height: 1px;
+  content: '';
+  background-color: #d8d8d8;
+}
+.participate .contact-information .section-title .sub-title {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1400px) {
+  .participate .contact-information .section-title .main-title {
+    margin-bottom: -10px;
+  }
+  .participate .contact-information .section-title .main-title span {
+    padding: 0 35px;
+    font-size: 40px;
+  }
+  .participate .contact-information .section-title .sub-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .participate .contact-information .section-title {
+    width: 95%;
+  }
+  .participate .contact-information .section-title .main-title {
+    margin-bottom: -20px;
+  }
+  .participate .contact-information .section-title .main-title span {
+    padding: 0 25px;
+    font-size: 35px;
+  }
+  .participate .contact-information .section-title .sub-title {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .participate .contact-information .section-title {
+    width: 95%;
+  }
+  .participate .contact-information .section-title .main-title {
+    margin-bottom: -25px;
+  }
+  .participate .contact-information .section-title .main-title span {
+    padding: 0 22px;
+    font-size: 32px;
+  }
+  .participate .contact-information .section-title .sub-title {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .participate .contact-information .section-title {
+    width: 95%;
+  }
+  .participate .contact-information .section-title .main-title {
+    margin-bottom: -30px;
+  }
+  .participate .contact-information .section-title .main-title span {
+    padding: 0 20px;
+    font-size: 29px;
+  }
+  .participate .contact-information .section-title .sub-title {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .participate .contact-information .section-title {
+    width: 95%;
+  }
+  .participate .contact-information .section-title .main-title {
+    margin-bottom: -32px;
+  }
+  .participate .contact-information .section-title .main-title span {
+    padding: 0 10px;
+    font-size: 26px;
+  }
+  .participate .contact-information .section-title .sub-title {
+    font-size: 17px;
+  }
+}
+.participate .contact-information .address-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 100px;
+  height: 450px;
+  background: #ffffff;
+  box-shadow: 0px 20px 21px 0px rgba(166, 169, 185, 0.15);
+  border-radius: 12px;
+}
+.participate .contact-information .address-list .item {
+  padding-top: 80px;
+  text-align: center;
+}
+.participate .contact-information .address-list .item figure {
+  display: flow-root;
+}
+.participate .contact-information .address-list .item figure img {
+  margin-bottom: 35px;
+}
+.participate .contact-information .address-list .item figure figcaption {
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #282b31;
+}
+.participate .contact-information .address-list .item address {
+  margin: 0 auto;
+  width: 75%;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  color: #676c75;
+  line-height: 44px;
+}
+.participate .contact-information .address-list .item:nth-child(2) {
+  border-left: 1px solid #e7e8ea;
+  border-right: 1px solid #e7e8ea;
+}
+@media screen and (max-width: 1600px) {
+  .participate .contact-information {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .participate .contact-information .section-title {
+    margin-bottom: 90px;
+  }
+  .participate .contact-information .address-list {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 80px;
+    height: auto;
+  }
+  .participate .contact-information .address-list .item:nth-child(2) {
+    border: none;
+  }
+  .participate .contact-information .address-list .item:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 3;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .participate .contact-information .section-title {
+    margin-bottom: 70px;
+  }
+  .participate .contact-information .address-list {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .participate .contact-information .section-title {
+    margin-bottom: 50px;
+  }
+  .participate .contact-information .address-list {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .participate .contact-information .section-title {
+    margin-bottom: 30px;
+  }
+  .participate .contact-information .address-list {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+  }
+  .participate .contact-information .address-list .item:nth-child(n) {
+    grid-area: auto;
+    padding-top: 50px;
+  }
+}

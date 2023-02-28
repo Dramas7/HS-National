@@ -1,0 +1,26 @@
+/************** utils start ***************/
+/************** utils end *****************/
+/************** 标题 start****************/
+/************** 标题 end****************/
+/**************** 简单类样式 start*************/
+.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner {
+  cursor: pointer;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+}
+/**************** 简单类样式 end***************/

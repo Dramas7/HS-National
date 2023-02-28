@@ -1,0 +1,382 @@
+@import './global.less';
+
+.introduce {
+  font-family: Source Han Sans CN;
+
+  .banner {
+    height: 578px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .company-profile {
+    position: relative;
+    display: flow-root;
+    background-image: url('../imgs/introduce/公司简介背景图.png');
+
+    .section-title {
+      .section-title-normal();
+      margin-bottom: 100px;
+      margin-top: 75px;
+    }
+
+    .profile {
+      margin: 0 auto;
+      margin-bottom: 90px;
+      width: 1196px;
+      font-size: 24px;
+
+      p {
+        font-weight: 400;
+        color: #4d4d4d;
+        line-height: 51px;
+      }
+
+      & > p {
+        margin-bottom: 80px;
+      }
+
+      hr {
+        margin: 0 auto;
+        margin-bottom: 25px;
+        width: 1000px;
+        height: 4px;
+        background: #687253;
+      }
+
+      & > section {
+        h3 {
+          margin-bottom: 20px;
+          text-align: center;
+          font-weight: 500;
+          font-size: 24px;
+          color: #333333;
+        }
+      }
+    }
+
+    .core-value {
+      display: flow-root;
+      text-align: center;
+      color: #ffffff;
+      font-weight: 400;
+      background: linear-gradient(0deg, #2b1b77, #4730ba);
+
+      h3 {
+        margin-top: 70px;
+        margin-bottom: 85px;
+        font-size: 30px;
+      }
+
+      .keywords-dfn-list {
+        margin: 0 auto;
+        margin-bottom: 100px;
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+          &:not(:last-child) {
+            margin-bottom: 60px;
+          }
+        }
+
+        .keywords {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 60px;
+          font-weight: bold;
+
+          span {
+            margin: 0 25px;
+          }
+        }
+
+        dd {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 2;
+        }
+      }
+    }
+
+    .goals-and-visions {
+      display: grid;
+      grid-template-columns: repeat(2, 600px);
+      grid-template-rows: repeat(2, 340px);
+      justify-content: center;
+      row-gap: 60px;
+      margin-top: 94px;
+      margin-bottom: 170px;
+
+      .vignette {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      section {
+        h3 {
+          margin-bottom: 40px;
+          font-size: 30px;
+          font-weight: bold;
+          color: #333333;
+        }
+
+        p {
+          font-size: 24px;
+          font-weight: 400;
+          color: #666666;
+          line-height: 2;
+        }
+
+        &.goals {
+          padding-left: 53px;
+        }
+
+        &.visions {
+          padding-right: 53px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1300px) {
+      .core-value {
+        h3 {
+          margin-top: 50px;
+          margin-bottom: 50px;
+          font-size: 28px;
+        }
+
+        .keywords-dfn-list {
+          margin-bottom: 80px;
+          width: 95%;
+
+          .keywords {
+            font-size: 50px;
+          }
+
+          dd {
+            font-size: 22px;
+          }
+
+          & > * {
+            &:not(:last-child) {
+              margin-bottom: 50px;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1250px) {
+      .section-title {
+        margin-top: 65px;
+        margin-bottom: 80px;
+      }
+
+      .profile {
+        margin-bottom: 70px;
+        width: 95%;
+        font-size: 22px;
+
+        & > p {
+          margin-bottom: 60px;
+        }
+
+        hr {
+          width: 95%;
+        }
+
+        & > section {
+          h3 {
+            font-size: 22px;
+          }
+        }
+      }
+
+      .goals-and-visions {
+        grid-template-columns: 700px;
+        grid-template-rows: repeat(2, 3fr 2fr);
+        gap: 30px;
+        margin-bottom: 20px;
+
+        & > *:last-child {
+          grid-area: 3 / 1 / 4 / 2;
+        }
+
+        section {
+          text-align: center;
+          align-items: center;
+
+          &.goals {
+            padding-left: 0;
+          }
+
+          &.visions {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .section-title {
+        margin-top: 50px;
+        margin-bottom: 60px;
+      }
+
+      .profile {
+        margin-bottom: 55px;
+        width: 95%;
+        font-size: 20px;
+
+        & > p {
+          margin-bottom: 50px;
+        }
+
+        & > section {
+          h3 {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .core-value {
+        h3 {
+          margin-top: 35px;
+          margin-bottom: 35px;
+          font-size: 26px;
+        }
+
+        .keywords-dfn-list {
+          margin-bottom: 60px;
+          width: 95%;
+
+          .keywords {
+            font-size: 40px;
+          }
+
+          dd {
+            font-size: 20px;
+          }
+
+          & > * {
+            &:not(:last-child) {
+              margin-bottom: 35px;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .section-title {
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+
+      .profile {
+        margin-bottom: 40px;
+        font-size: 20px;
+
+        & > p {
+          margin-bottom: 30px;
+        }
+
+        & > section {
+          h3 {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .core-value {
+        h3 {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-size: 24px;
+        }
+
+        .keywords-dfn-list {
+          margin-bottom: 40px;
+
+          .keywords {
+            font-size: 30px;
+
+            span {
+              margin: 0 10px;
+            }
+          }
+
+          dd {
+            font-size: 19px;
+          }
+
+          & > * {
+            &:not(:last-child) {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+
+      .goals-and-visions {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr 1fr);
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+
+        .vignette {
+          max-height: 336px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .section-title {
+        margin-top: 25px;
+        margin-bottom: 30px;
+      }
+
+      .profile {
+        margin-bottom: 30px;
+        width: 95%;
+        font-size: 18px;
+
+        & > p {
+          margin-bottom: 25px;
+        }
+
+        & > section {
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .enterprise-architecture {
+    display: flow-root;
+
+    .section-title {
+      .section-title-normal();
+      margin-bottom: 100px;
+    }
+
+    .illustration {
+      margin-bottom: 50px;
+    }
+  }
+}

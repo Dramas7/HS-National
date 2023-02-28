@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./static/css/reset.css">
+  <link rel="stylesheet" href="./static/css/global.css">
+  <link rel="stylesheet" href="./static/css/header.css">
+  <link rel="stylesheet" href="./static/css/footer.css">
+  <link rel="stylesheet" href="./static/css/information.css">
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/header.js"></script>
+  <script src="./static/js/footer.js"></script>
+  <script src="./static/js/information.js"></script>
+</head>
+
+<body>
+  <!-- 页面头部 -->
+  <header class="header">
+    <!-- 用于协助响应式设计的容器 -->
+    <div class="container">
+      <!-- 类名为gap的元素节点仅用于协助响应式设计，无实际内容 -->
+      <div class="gap-left"></div>
+      <!-- 网站logo放置区 -->
+      <div class="logo">
+        <img src="./static/imgs/logo.png" alt="logo">
+      </div>
+      <!-- 类名为gap的元素节点仅用于协助响应式设计，无实际内容 -->
+      <div class="gap-middle"></div>
+      <!-- 顶部导航栏 -->
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li class="item"><a href="javascript:;" data-home>首页</a></li>
+          <li class="item"><a href="javascript:;" data-introduce>公司介绍</a></li>
+          <li class="item"><a href="javascript:;" data-project>项目介绍</a></li>
+          <li class="item"><a href="javascript:;" data-information>公司资讯</a></li>
+          <li class="item"><a href="javascript:;" data-contact>联系我们</a></li>
+          <li class="item"><a href="javascript:;" data-participate>招商平台</a></li>
+        </ul>
+      </nav>
+      <!-- 语言栏 -->
+      <div class="langue-bar">
+        <a href="javascript:;" class="chinese active">中</a>/<a href="javascript:;" class="english">英</a>
+      </div>
+      <!-- 缩放到768px的断点后显示的菜单栏 -->
+      <div class="menu">
+        <button class="menu-btn"></button>
+        <!-- 下拉区域 -->
+        <div class="drop-down-area">
+          <!-- 语言栏 -->
+          <div class="langue-bar">
+            <a href="javascript:;" class="chinese active">中</a>/<a href="javascript:;" class="english">英</a>
+          </div>
+          <!-- 导航列表 -->
+          <ul class="nav-list">
+            <li class="item"><a href="javascript:;" data-home>首页</a></li>
+            <li class="item"><a href="javascript:;" data-introduce>公司介绍</a></li>
+            <li class="item"><a href="javascript:;" data-project>项目介绍</a></li>
+            <li class="item"><a href="javascript:;" data-information>公司资讯</a></li>
+            <li class="item"><a href="javascript:;" data-contact>联系我们</a></li>
+            <li class="item"><a href="javascript:;" data-participate>招商平台</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="information">
+    <div class="banner">
+      <img src="./static/imgs/information/banner.png" alt="banner">
+      <ul class="info-list">
+        <li>
+          <img src="./static/imgs/information/组12.png" alt="background" class="bg">
+          <h3>大点的标题</h3>
+          <p>一句话介绍下你的标题，不要太多字</p>
+        </li>
+        <li>
+          <img src="./static/imgs/information/组13.png" alt="background" class="bg">
+          <h3>大点的标题</h3>
+          <p>一句话介绍下你的标题，不要太多字</p>
+        </li>
+        <li>
+          <img src="./static/imgs/information/组14.png" alt="background" class="bg">
+          <h3>大点的标题</h3>
+          <p>一句话介绍下你的标题，不要太多字</p>
+        </li>
+        <li>
+          <img src="./static/imgs/information/组15.png" alt="background" class="bg">
+          <h3>大点的标题</h3>
+          <p>一句话介绍下你的标题，不要太多字</p>
+        </li>
+      </ul>
+    </div>
+    <!-- 活动资讯 -->
+    <section class="event-information">
+      <!-- 章节标题 -->
+      <h2 class="section-title">
+        <p class="main-title">
+          <span>EVENT INFORMATION</span>
+        </p>
+        <p class="sub-title">活动资讯</p>
+        </p>
+      </h2>
+      <!-- container仅用于进行响应式布局，屏幕缩小时进行等比例缩放 -->
+      <div class="container">
+        <ul class="video-area">
+          <li class="item see-more">
+            <button>查看更多</button>
+          </li>
+          <li class="item"></li>
+          <li class="item"></li>
+          <li class="item"></li>
+          <li class="item"></li>
+          <li class="item"></li>
+          <li class="item"></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- 页面尾部 -->
+  <footer class="footer">
+    <!-- .container仅用于辅助进行响应式布局 -->
+    <div class="container">
+      <!-- 公司 logo等基本信息区 -->
+      <div class="company-info-col">
+        <!-- logo放置区 -->
+        <div class="logo">
+          <img src="./static/imgs/logo.png" alt="logo">
+        </div>
+        <!-- 联系信息 -->
+        <address>
+          <p class="phone"><span>电话:</span>+15858585858</p>
+          <p class="email"><span>邮箱:</span>xxxxxxxx@QQ.com</p>
+        </address>
+        <!-- 版权 -->
+        <p class="copyright">Copyright©2016-20122 红粟云 版权所有</p>
+      </div>
+      <!-- 仅用于弹性布局及响应式用，无实际意义 -->
+      <div class="flex-gap"></div>
+      <!-- 底部导航区 -->
+      <nav class="nav-col">
+        <ul class="nav-list col-1">
+          <li class="item"><a href="javascript:;">关于我们</a></li>
+          <li class="item"><a href="javascript:;">品牌故事</a></li>
+          <li class="item"><a href="javascript:;">品牌荣誉</a></li>
+          <li class="item"><a href="javascript:;">人才招聘</a></li>
+          <li class="item"><a href="javascript:;">联系我们</a></li>
+        </ul>
+        <ul class="nav-list col-2">
+          <li class="item"><a href="javscript:;">产品</a></li>
+          <li class="item"><a href="javscript:;">定制中心</a></li>
+          <li class="item"><a href="javscript:;">专业定制高端</a></li>
+        </ul>
+        <ul class="nav-list col-3">
+          <li class="item"><a href="javascript:;">支持</a></li>
+          <li class="item"><a href="javascript:;">条款和条件</a></li>
+          <li class="item"><a href="javascript:;">隐私</a></li>
+          <li class="item"><a href="javascript:;">帮助</a></li>
+          <li class="item"><a href="javascript:;">链接</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
